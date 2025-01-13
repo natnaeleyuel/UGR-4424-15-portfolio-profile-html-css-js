@@ -6,10 +6,9 @@ section.education_section{
 h1.title{
     grid-area: 1 / 1 / 2 / 2;
     border: 1px solid #D9C0C5;
-    background-color: #F5F5F5;
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: fit-content;
     height: fit-content;
     justify-self: center;
@@ -17,9 +16,12 @@ h1.title{
 
 img.portrait_image{
     grid-area: 2 / 1 / 3 / 2;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    width: 90%;
+    margin-bottom: 30px;
+    width: 60%;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+    justify-self: center;
 }
 
 div.education_details{
@@ -27,6 +29,8 @@ div.education_details{
     border: 1px solid #D9C0C5;
     padding: 10px;
     border-radius: 5px 5px 0 0;
+    width: 80%;
+    justify-self: center;
 }
 
 @media screen and (min-width: 767px) {
@@ -38,6 +42,8 @@ div.education_details{
     h1.title{
         grid-area: 1 / 1 / 2 / 2;
         justify-self: unset;
+        align-self: flex-end;
+        margin-bottom: 20px;
     }
     
     img.portrait_image{
@@ -50,11 +56,13 @@ div.education_details{
         border: none;
         padding: 0;
         width: 90%;
+        justify-self: unset;
     }
 }
 @media screen and (min-width: 991px) {
     section.education_section{
-        grid-template-columns: 90%;
+        padding-left: 15%;
+        grid-template-columns: 100%;
         grid-template-rows: repeat(3, auto);
     }
     
@@ -65,7 +73,9 @@ div.education_details{
     img.portrait_image{
         grid-area: 1 / 1 / 2 / 2;
         margin-bottom: 20px;
-        width: 50%;
+        width: 55%;
+        margin-bottom: 40px;
+        justify-self: left;
      }
     
     div.education_details{
@@ -75,6 +85,7 @@ div.education_details{
 
 @media screen and (min-width: 1023px) {
     section.education_section{
+        padding-left: 2%;
         grid-template-columns: 60% 40%;
         grid-template-rows: auto auto;
     }
@@ -97,6 +108,7 @@ div.education_details{
 }
 @media screen and (min-width: 1440px) {
     section.education_section{
+        padding-top: 40px;
         grid-template-columns: 60% 40%;
         grid-template-rows: auto auto;
     }

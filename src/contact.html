@@ -71,70 +71,81 @@
 
     </header>
 
-    <main class="main">
+    <main class="main" id="main">
         <img src="images/picture-of-Natnael.png" alt="Picture of Natnael Eyuel" id="profile_picture">
 
-        <div class="contact_details">
-            <article class="contact_intro">
-                <h1 class="title">GET IN TOUCH</h1>
+        <div class="main-container">
+            <div class="contact_details">
+                <article class="contact_intro">
+                    <h1 class="title_contact">GET IN TOUCH</h1>
+                    <p>
+                        I’d love to hear from you! Whether you have a question, want to collaborate, 
+                        or simply wish to connect, feel free to reach out. Here’s how you can get in touch:
+                    </p>
+                </article>
+
+                <article>
+                    <div class="container-info">
+                        <div class="email_content">
+                            <h3>Email</h3>
+                            <a href="mailto:natnaeleyuel77@gmail.com" id="email">natnaeleyuel77@gmail.com</a>
+                        </div>
+
+                        <div class="socials_content">
+                            <h3>Stay Connected</h3>
+                            <div class="socials_links">
+                                
+                                <a href="https://web.facebook.com/profile.php?id=61551690324649" aria-label="Facebook">
+                                    <img src="images/facebook_icon.png" alt="facebook icon image">
+                                </a>
+                
+                                <a href="https://www.linkedin.com/in/natnael-eyuel/" aria-label="LinkedIn">
+                                    <img src="images/linkedin_icon.png" alt="linkedin icon image">
+                                </a>
+                
+                                <a href="https://www.instagram.com/natnaeleyuel/" aria-label="Instagram">
+                                    <img src="images/instagram_icon.png" alt="instagram icon image">
+                                </a>
+                
+                                <a href="https://github.com/natnaeleyuel" aria-label="GitHub">
+                                    <img src="images/github_icon.png" alt="github icon image">
+                                </a>
+                                
+                                <a href="https://x.com/nati_neil" aria-label="Twitter">
+                                    <img src="images/x_twitter_icon.png" alt="x twitter icon image">
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="contact_form">
+                <h2>Send a Message</h2>
                 <p>
-                    I’d love to hear from you! Whether you have a question, want to collaborate, 
-                    or simply wish to connect, feel free to reach out. Here’s how you can get in touch:
+                    If you’d rather share your thoughts through a message, just fill out the form below. 
+                    I can’t wait to hear from you!
                 </p>
-            </article>
+                <form action="https://api.web3forms.com/submit" method="POST" class="form_content">
+                    <input type="hidden" name="access_key" value="936c8627-2d5d-42b6-98ea-de91f69f699b">
+                    <div class="inner-form">
+                        <div>
+                            <div class="name-email">
+                                <input type="text" name="name" id="name" placeholder="Name *" required>
 
-            <article class="email_content">
-                <h3>Email</h3>
-                <a href="mailto:natnaeleyuel77@gmail.com" id="email">natnaeleyuel77@gmail.com</a>
-            </article>
+                                <input type="email" name="email" id="email-input" placeholder="Email *" required>
+                            </div>
 
-            <article class="socials_content">
-                <h3>Stay Connected</h3>
-                <div class="socials_links">
-                    
-                    <a href="https://web.facebook.com/profile.php?id=61551690324649" aria-label="Facebook">
-                        <img src="images/facebook_icon.png" alt="facebook icon image">
-                    </a>
-    
-                    <a href="https://www.linkedin.com/in/natnael-eyuel/" aria-label="LinkedIn">
-                        <img src="images/linkedin_icon.png" alt="linkedin icon image">
-                    </a>
-    
-                    <a href="https://www.instagram.com/natnaeleyuel/" aria-label="Instagram">
-                        <img src="images/instagram_icon.png" alt="instagram icon image">
-                    </a>
-    
-                    <a href="https://github.com/natnaeleyuel" aria-label="GitHub">
-                        <img src="images/github_icon.png" alt="github icon image">
-                    </a>
-                    
-                    <a href="https://x.com/nati_neil" aria-label="Twitter">
-                        <img src="images/x_twitter_icon.png" alt="x twitter icon image">
-                    </a>
+                            <input type="text" name="subject" id="subject" placeholder="Subject *" required>
+                        </div>
 
-                </div>
-            </article>
-        </div>
+                        <textarea name="message" id="message" placeholder="Message *" required></textarea>
+                    </div>
 
-        <div class="contact_form">
-            <h2>Send a Message</h2>
-            <p>
-                If you’d rather share your thoughts through a message, just fill out the form below. 
-                I can’t wait to hear from you!
-            </p>
-            <form action="https://api.web3forms.com/submit" method="POST" class="form_content">
-                <input type="hidden" name="access_key" value="936c8627-2d5d-42b6-98ea-de91f69f699b">
-
-                <input type="text" name="name" id="name" placeholder="Name *" required>
-
-                <input type="email" name="email" id="email-input" placeholder="Email *" required>
-
-                <input type="text" name="subject" id="subject" placeholder="Subject *" required>
-
-                <textarea name="message" id="message" placeholder="Message *" required></textarea>
-
-                <button type="submit">SUBMIT</button>
-            </form>
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
         </div>
     </main>
     
